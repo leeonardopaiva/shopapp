@@ -1,0 +1,24 @@
+
+<div class="container">
+
+<div *ngIf="movies$ | async as movies">
+  <div *ngFor="let itens of movies" class="img-theaters">
+    <img src='{{itens.image}}' title="{{itens.title}}"/>
+  <h3>{{itens.title}}</h3>
+</div>
+
+<div *ngIf="theaters$ | async as theaters">
+    <div *ngFor="let item of theaters" class="card">
+      <h2>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAACQ0lEQVRYhe2WzUsVYRTGf69koFgQ5ZzRhOhrE9auFn1AGdFGo6IWQREtIoraF61EgtaGBBEhbfpEI2tXf0ERLbSgRbhMCxQrlPL6tOgoc/XOdaartcgDl3t5z+88z8Odd+YdWKql+t8rpDVkRMAloBXYDPwAPgI9wO0wxHAJ/ixwBNgALCfwAfGcQGf4xOfMARRzDHEHWJGSbwQ4HYboc/NDQDewKoUfQ5wJw/TMblSlmD908z4C+4A6oI5AC/DMjZ7IaJXRBvT6Whq/ksAjRRxNCejmRiRjTIZkXCnDXXVmxD9Z+VHF1JcL0OHg07JJf7N9zubjY9rLQW8d2ptBsGUmQB4+5k1yffYe2AhAgdfzCVLgVeJ3dl5sSi4vKwlXofn0whe+UuY2zlqz/4FB/26uVLiE07TmYPFycb0EQJxahADTmi9SGRnNMqZkTGg1axfKW2tokDEuQ4rYVh42en1331uwAMYDvwMeZ4HXyxj1tOcqNo+5MPMQamBdtqGIw34pxmXs/2PziAMyJlyrLd+wcc2Tf1M9u3Ob17NHxnfX6Mg7jyAoomsmhNGaeTbiYOJMuaUSh172EDE3XeinIs7POxNzUcak76EuVfqwEgQ/pKZctFuN1M7hGqlVzF0PO6WY9orNiwxijieu6TvFbE/0dsh4771xRZzMqpsroYytwH1gCzAJXPfWZX6fK/3AiTBEfx7dXKUmamTckFFIvA8UZHSqiZpFM54TJGKXjAEZA4rY+deMi0JAtaD6n5gv1ULVL1o/Gls4OA9qAAAAAElFTkSuQmCC">
+        {{item.name}}
+      </h2>
+      <p>{{item.address}}</p>
+        <ul>
+            <li><a [routerLink]="['/cadastro']">20:00</a></li>
+            <li>20:00</li>
+        </ul>
+    </div>
+</div>
+
+</div>

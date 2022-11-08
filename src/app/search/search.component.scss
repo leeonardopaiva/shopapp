@@ -1,0 +1,20 @@
+.search {
+  background:white;
+  height: 56px;
+  text-align: center;
+  padding:7px 10px;
+}
+
+input[type=search] {
+  /* Layout Properties */
+  width:100%;
+top: 64px;
+// left: 16px;
+// width: 328px mob;
+height: 40px;
+/* UI Properties */
+background: #F1F3F4 0% 0% no-repeat padding-box;
+border: 1px solid #00000035;
+border-radius: 4px;
+opacity: 1;
+}

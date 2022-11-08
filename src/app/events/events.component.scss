@@ -1,0 +1,146 @@
+
+body {background: #F1F3F4 no-repeat padding-box;}
+
+table {
+  margin:0px 0;
+}
+
+input[type=search]::placeholder {
+ text-indent:3%;
+}
+
+
+tbody {
+  background:#8d8d8d1f;;
+}
+tr {
+  float:left;
+  width:13%;
+  height: 323px;
+  border:0px solid red;
+  margin:0.64%;
+}
+
+td {
+  float:left;
+  width:100%;
+  padding:2px 0;
+}
+
+td:nth-of-type(2) {
+  text-align: left;
+  font: normal normal bold 14px/19px "Roboto";
+  padding:5px 10px 0 10px;
+  letter-spacing: 0px;
+  color: #00000099;
+  opacity: 1;
+}
+
+td:nth-of-type(3) {
+  padding:0 10px;
+  font-size:12px;
+}
+
+
+td:last-child {
+  text-align: center;
+  padding:5px 0;
+}
+
+.box {
+ background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 2px 6px #00000029;
+  border-radius: 4px;
+  opacity: 1;
+}
+.box img {
+  width: 100%;
+  // max-height: 140px;
+  margin:0;
+  border-left:25px solid white;
+  border-right:25px solid white;
+}
+
+  button {
+  width: 140px;
+  height: 32px;
+  background: #1E1E1E 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  border:0;
+  opacity: 1;
+  color:white;
+  margin:0 auto;
+  bottom:0;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: DodgerBlue;
+  align-items: stretch;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+
+i{
+  float:left;
+  color:red;
+  padding:15px;
+  font-size:26px;
+}
+
+
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+
+  tr{
+    float: left;
+    width: 48.6%;
+    height: 323px;
+    margin: 0.64%;
+}
+
+td:nth-of-type(3) {
+  text-align: left;
+}
+
+.box {
+  height: auto;
+  padding:5px 0;
+ }
+
+.box img {
+  width: auto;
+  height: 140px;
+}
+
+tbody{
+  padding: 5px;
+  float: left;
+}
+
+td{
+  float: left;
+  width: 100%;
+  padding: 2px 0;
+  text-align: center;
+}
+
+button {
+  width: 95%;
+  margin:5px;
+}
+
+
+}

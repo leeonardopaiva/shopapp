@@ -1,0 +1,13 @@
+<app-search></app-search>
+
+ <table cols="3">
+  <tbody *ngIf="events$ | async as events">
+    <tr *ngFor="let item of events" class="box">
+      <td><img src='{{item.image}}' /></td>
+      <td>{{item.title}}</td>
+      <td>{{item.genres}}</td>
+      <td><button type="button" [routerLink]="['/theaters']">Comprar</button></td>
+    </tr>
+  </tbody>
+</table>
+
